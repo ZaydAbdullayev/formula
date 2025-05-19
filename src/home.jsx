@@ -19,19 +19,19 @@ export const App = () => {
   });
   const [activeUsers, setActiveUsers] = useState(2300);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setActiveUsers((prev) => {
-      const change =
-        Math.random() < 0.6
-          ? Math.floor(Math.random() * 5 + 4)
-          : -Math.floor(Math.random() * 3 + 2);
-      return Math.max(prev + change, 0);
-    });
-  }, 3000); // 3 saniyede bir güncelle
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveUsers((prev) => {
+        const change =
+          Math.random() < 0.6
+            ? Math.floor(Math.random() * 5 + 4)
+            : -Math.floor(Math.random() * 3 + 2);
+        return Math.max(prev + change, 0);
+      });
+    }, 3000); // 3 saniyede bir güncelle
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const generateFormula = () => {
     const rx = Math.floor(Math.random() * 999999);
@@ -52,26 +52,6 @@ useEffect(() => {
         </p>
         <p>Join the revolution and unlock the power of AI-driven trading.</p>
       </div>
-      <div className="w100 df fdc gap-20 box content token-wrapper">
-        <h2>Tokenomics</h2>
-        <div className="w100 df fw gap-10">
-          <div className="w100 df fdc gap-5 token-info">
-            <h3>Token Address</h3>
-            <p className="w100 df aic jcsb">
-              0x1234567890abcdef1234567890abcdef12345678{" "}
-              <IoCopyOutline size={24} />
-            </p>
-          </div>
-          <div className="df fdc gap-5">
-            <h3>Token Supply</h3>
-            <p>1,000,000,000 DEGEN</p>
-          </div>
-          <div className="df fdc gap-5">
-            <h3>Token Distribution</h3>
-            <p>50% to liquidity, 20% to team, 30% to community</p>
-          </div>
-        </div>
-      </div>
       <div className="w100 df aic gap-20 box content">
         <div className="f1 df fdc token-info gap-5">
           <h2>Formula</h2>
@@ -86,7 +66,7 @@ useEffect(() => {
       </div>
 
       <div className="w100 df fdc aic gap-10 box content generate-formula">
-        <h2>Generate Your Own Formula</h2>
+        <h1>Generate Your Own Formula</h1>
         <p>Unleash your creativity unique formula for trading success.</p>
         <div className="w100 df fdc aic gap-10 content result-formula">
           <h3>PRESCRIPTION #RX-{formula.rx}</h3>

@@ -14,9 +14,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #ffffff;
-  background-image: linear-gradient(to right, #4d4030 1px, transparent 1px),
-    linear-gradient(to bottom, #4d4030 1px, transparent 1px);
+  color: #000000;
+  background: #ffffff;
+  background-image: linear-gradient(to right, #ff510010 1px, transparent 1px),
+    linear-gradient(to bottom, #ff510010 1px, transparent 1px);
   background-size: 1rem 1rem;
   background-position: center center;
 

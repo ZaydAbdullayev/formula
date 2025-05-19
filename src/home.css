@@ -10,8 +10,8 @@
 .box {
   position: relative;
   border-radius: 10px;
-  background-color: #f2e2c4; /* Muted beige for retro */
-  color: #3a2e20; /* Dark brown for contrast */
+  background-color: #ff08004b; /* Muted beige for retro */
+  color: #fff; /* Dark brown for contrast */
   > * {
     z-index: 1;
   }
@@ -24,15 +24,15 @@
     right: 0;
     bottom: 0;
     background-image: conic-gradient(
-      #3a2e20,
-      #c98f65 5%,
-      #3a2e20 14%,
-      #3a2e20 50%,
-      #f28e8e 60%,
-      #3a2e20 64%
+      #ffa600,
+      #f08080 5%,
+      #ffa600 14%,
+      #ffa600 50%,
+      #ee3e3e 60%,
+      #ffa600 64%
     );
     border-radius: 10px;
-    filter: blur(20px);
+    filter: blur(10px);
     z-index: -1;
   }
 }
@@ -60,15 +60,15 @@
     font-weight: 500;
     background-image: repeating-linear-gradient(
       45deg,
-      #3a2e20 0%,
-      #c98f65 5%,
-      #3a2e20 27%,
-      #3a2e20 40%,
-      #f28e8e 70%,
-      #3a2e20 75%
+      #fff 0%,
+      #f0b280 5%,
+      #fff 27%,
+      #fff 40%,
+      #db9b3a 70%,
+      #fff 75%
     );
     border-radius: 10px;
-    color: #f8dec1;
+    color: #000;
   }
 }
 
@@ -100,7 +100,7 @@ button:active {
 }
 
 button:hover:not(:disabled) {
-  background: lightcoral;
+  background: #f08080;
   color: white;
   text-shadow: 0 0.1rem #bcb4b4;
 }
@@ -115,6 +115,7 @@ button:disabled {
   box-shadow: 0 0.4rem #dfd9d9;
   border-radius: 1rem;
   margin-bottom: 20px;
+  color: #000;
 
   p {
     align-items: flex-end;
@@ -161,7 +162,7 @@ button:disabled {
     position: absolute;
     top: 0;
     left: 0;
-    color: #3a2e20;
+    color: #fff;
     width: 100%;
     height: 100%;
     animation: pulse 1.5s backwards infinite;
@@ -180,9 +181,9 @@ button:disabled {
 }
 
 .disclaimer {
-  background: #3a2e20ad;
-  color: #f28e8e;
-  border: 1px solid #f28e8e30;
+  background: #ffffff54;
+  color: #ff0000;
+  border: 1px solid #ff000028;
 }
 
 @keyframes rotate {
